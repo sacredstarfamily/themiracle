@@ -1,0 +1,14 @@
+.userProfile {
+    position: relative;
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+.userProfile h1{
+    position: relative;
+    top: -30px;
+}
+.userProfile hr{
+    position: relative;
+    top: -30px;
+}

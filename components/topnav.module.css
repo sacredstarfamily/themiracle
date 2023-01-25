@@ -1,0 +1,111 @@
+
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 12; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(57, 23, 75); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d1d0d0;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #ffea00;
+    font-size: 28px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    background-color: gold;
+    border-radius: 10px;
+    padding-top:0px;
+    padding-bottom: 0px;
+    box-shadow: rgb(166, 142, 8) 2px 2px;
+    font-size: 36px;
+    margin-left: 40px;
+  }
+  
+  .openBtn{
+    position: fixed;
+    left: 15px;
+    top:15px;
+    z-index: 6;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: #111 2px 2px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .openBtn:hover{
+    font-size:48px;
+    color:gold;
+  }
+  .walletconnect{
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+ 
+  .logo{
+    margin-top: 50px;
+    width:50%;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  .chainSelect {
+    
+    top:5px;
+    right:10px;
+    z-index: 1;
+    display: inline-block;
+    border-radius: 16px;
+  }
+  
+  .chainSelect select {
+  width: 170px;
+  height: 50px;
+  font-size: 18px;
+  color:rgb(55, 0, 103);
+  text-align: center;
+   background-color: #ffac2a;
+  }
+  .walletBtn{
+    position: relative;
+    justify-content: center;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media screen and (max-width:500px)  {
+    .openBtn {
+      font-size: 30px;
+      left:10px;
+      top:10px;
+    }
+    .openBtn:hover{
+      font-size:33px;
+      color: gold;
+    }
+  }

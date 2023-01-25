@@ -1,0 +1,129 @@
+.animationwrapper{
+    position:absolute;
+    width: 100%;
+    margin-left: 20%;
+}
+.circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: gold;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center;
+}
+
+@for $num from 1 through 8 {
+   
+    
+    .circle:nth-child(#{$num}) {
+      left: ($num - 1) * 25px;
+      animation-delay: $num * .1s;
+    }
+}
+
+@media  screen and (min-width: 350) {
+    .circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: gold;
+      animation: move-the-circle 1s infinite;
+      transform-origin: center center;
+    }
+    @for $num from 1 through 8 {
+      .circle:nth-child(#{$num}) {
+        left: ($num - 1) * 30px;
+        animation-delay: $num * .1s;
+      }
+    }
+}
+
+@media screen and (min-width:400px) {
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 35px;
+          animation-delay: $num * .1s;
+        }
+      }
+  }
+  @media screen and (min-width:550px) {
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 45px;
+          animation-delay: $num * .1s;
+        }
+      }
+  }
+
+@media screen and (min-width:650px) {
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 55px;
+          animation-delay: $num * .1s;
+        }
+      }
+}
+
+@media screen and (min-width:750px){
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 60px;
+          animation-delay: $num * .1s;
+        }
+      }
+}
+
+@media screen and (min-width: 900px) {
+    @for $num from 1 through 8 {
+      .circle:nth-child(#{$num}) {
+        left: ($num - 1) * 75px;
+        animation-delay: $num * .1s;
+      }
+    }
+}
+
+@media screen and (min-width:1000px){
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 85px;
+          animation-delay: $num * .1s;
+        }
+      }
+}
+
+@media screen and (min-width:1200px){
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 105px;
+          animation-delay: $num * .1s;
+        }
+      }
+  }
+  @media screen and (min-width:1300px){
+    @for $num from 1 through 8 {
+        .circle:nth-child(#{$num}) {
+          left: ($num - 1) * 115px;
+          animation-delay: $num * .1s;
+        }
+      }
+  }
+  @keyframes move-the-circle {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      background-color: rgb(192, 189, 174);
+    }
+    50% {
+      transform: translate(0, 20px) scale(.4);
+      opacity: .5;
+      background-color: rgb(255, 0, 170);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      background-color: turquoise;
+    }
+  }
+  

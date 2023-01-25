@@ -1,0 +1,51 @@
+{
+  "name": "themiracle",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname gtfol.me",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@solana/wallet-adapter-base": "^0.9.18",
+    "@solana/wallet-adapter-react": "^0.15.24",
+    "@solana/wallet-adapter-react-ui": "^0.9.22",
+    "@solana/wallet-adapter-wallets": "^0.19.5",
+    "@solana/web3.js": "^1.66.2",
+    "@stripe/react-stripe-js": "^1.16.2",
+    "@stripe/stripe-js": "^1.46.0",
+    "@thirdweb-dev/react": "^3.6.0",
+    "@thirdweb-dev/sdk": "^3.6.0",
+    "@thirdweb-dev/storage": "^1.0.6",
+    "alchemy-sdk": "^2.2.5",
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.6.8",
+    "fs": "^0.0.1-security",
+    "next": "^12.1.6",
+    "next-auth": "^4.18.8",
+    "qs": "^6.11.0",
+    "querystring": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.1.0",
+    "react-dropzone": "^14.2.3",
+    "react-facebook": "^9.0.12",
+    "sass": "^1.57.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
+    "@types/uuid": "^9.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.0",
+    "typescript": "^4.6.2"
+  }
+}

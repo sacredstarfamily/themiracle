@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+.container {
+  z-index: 0;
+  position: relative;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 95vw;
+  margin-bottom: 100px;
+}
+.container a{
+
+  color: white;
+}
+
+.loginsignupBtn{
+  padding: 5px;
+  font-size: 20px;
+  width: 200px;
+  background-image: linear-gradient(
+    to left top,
+    var(--color-primary) 0%,
+    var(--color-styley) 80%,
+    var(--color-secondary)100%
+  ) ;
+  color: white;
+  text-shadow:2px 2px 2px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgb(112, 89, 89);
+  margin-bottom: 12px;
+}
+
+#fblogin{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  background-color: blue;
+  border-radius: 10px;
+  color:white;
+ }
+#fblogout{
+  
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    color:white;
+}
+#fbshare{
+  text-align: center;
+    width:150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    color:white;
+}
+#fbpropic{
+  border-radius: 50%;
+  border:#0000ff;
+}
+.fun{
+  position: relative;
+  animation: slideIn 1s ease-in forwards ;
+} 
+.about{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  animation: slideIn 1.5s ease-in forwards;
+}
+
+@keyframes slideIn {
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+#congrats{
+  animation: flyright 2s ease forwards;
+}
+.congrats{
+  font-family: 'Tangerine', serif;
+  font-size: 38px;
+  text-shadow: 4px 4px 4px rgb(175, 252, 33);
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgb(73, 27, 92), #272727);
+}
+.congrats::before, .congrats::after{
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.congrats::after{
+  filter: blur(50px);
+}
+.congrats a{
+  color: gold;
+  font-size: 48px;
+  
+}
+.imageCard {
+  border: 2px solid gold;
+  padding:5px;
+  margin: 5px;
+  border-radius: 15px;
+  justify-content: center;
+}
+.tokenNum{
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+}
+.voteBtn{
+  padding:5px;
+  width:100px;
+  font-weight: bold;
+  font-size: large;
+  margin: 5px;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 80%
+  );
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgb(123, 22, 22);
+  color:white;
+  cursor:grab;
+}
+.centerDiv {
+  position: relative;
+  
+  width: 80%;
+ }
+.topnav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+
+
+
+.backgroundImage {
+ position: fixed;
+ left:0px;
+ height:100%;
+ width:100%;
+ opacity: 0.9;
+ z-index:-2;
+}
+
+.previewImage {
+  height: 500px;
+  width: 500px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 8px;
+}
+
+.mintInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 0 24px;
+  min-height: 720px;
+  max-width: 95vw;
+  gap: 2%;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+ 
+}
+.chainSelect {
+  position: fixed;
+  top:5px;
+  right:10px;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 16px;
+}
+
+.chainSelect select {
+ width: 170px;
+ height: 50px;
+ font-size: 18px;
+ color:rgb(55, 0, 103);
+ text-align: center;
+ background-color: #ffac2a;
+}
+
+#coinbase{
+  color: rgb(129, 129, 233);
+  font-size: 20px;
+}
+
+a .coinbase{
+  color: rgb(150, 150, 249);
+  font-size: 20px;
+}
+
+.lessonNav{
+  position: fixed;
+  z-index: 1;
+  top:100px;
+  width: 30px;
+  right: 0;
+  height: 100%;
+  background: #ffac2a;
+  transition: 0.5s;
+}
+
+.logindesc{
+ 
+  z-index:5;
+  margin-bottom: 150px;
+
+}
+.connectWallet{
+  position:absolute;
+  background-color: rgba(112, 89, 89,0.9);
+  top:200px;
+ text-align: center;
+  width: 100%;
+  height: 50%;
+  border: 1px solid gold;
+  z-index: 6;
+}
+.logindesc a{
+  color: rgb(255, 183, 0);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: #0000ff;
+}
+
+.lessonNav a{
+  text-decoration: none;
+  color: black;
+ font-size: 20px;
+}
+
+.icon{
+  font-size: 20px;
+  color:blue;
+}
+
+.lessonNav button{
+  position: relative;
+  margin-left: -25px;
+  background-color: purple;
+  color: gold;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.newConnect{
+  margin-right: 40%;
+  width: 200px;
+}
+
+.important{
+  color:red;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.logoutBtn{
+  position: fixed;
+  z-index: 10;
+  top:5px;
+  right:5px;
+  cursor: pointer;
+  background-color: purple;
+  color: gold;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.signup{
+  display: block;
+  z-index: 3;
+  opacity: 0;
+  padding: 10px;
+  border:5px solid gold;
+  border-radius: 10px;
+  animation: slideIn 1s ease-in forwards ;
+}
+
+.flyinh1{
+  position: relative;
+  left:-2000px;
+  animation: flyright 1s 1s ease forwards;
+}
+
+@keyframes flyright {
+  0%{left:-2000px}
+  100%{left: 0}
+}
+
+.flyinh2{
+  position: relative;
+  right: -2000px;
+  animation: flyleft 1s 2s ease forwards;
+}
+
+@keyframes flyleft {
+  0%{right:-2000px}
+  100%{right:0}
+}
+
+.card {
+  width: 100%;
+  
+  justify-content: center;
+  justify-items: center;
+}
+
+.signup input{
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+.signup button{
+  padding: 10px;
+  background-color: gold;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: plum 2px 2px;
+}
+
+.lesson{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 95vw;
+  height: 3000px;
+  align-items: center;
+ z-index: 0;
+ margin-bottom:40px;
+}
+
+.lessondiv{
+  align-items: center;
+  
+  position: relative;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.mintContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  bottom: 100px;
+}
+
+.description {
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+.imageSide {
+  width: 45%;
+  height: 100%;
+  margin-bottom:100px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  color: #fff;
+  width: 180px;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
+}
+
+.mainButton:hover {
+  opacity: 0.8;
+}
+
+.mintCompletionArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mintAreaLeft {
+  margin-left: 5%;
+  opacity: 0.75;
+}
+
+.mintAreaRight {
+  margin-right: 5%;
+  opacity: 0.75;
+}
+
+.spacerTop {
+  margin-top: 16px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+}
+
+.buttonGapTop {
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.quantityContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.textInput {
+  width: 48px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: #fff;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 1rem;
+}
+
+.quantityControlButton {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid grey;
+  color: #fff;
+}
+
+.quantityControlButton:disabled {
+  opacity: 0.25;
+}
+
+
+@media  screen and (min-width: 900px) {
+ 
+  .centerDiv{
+    font-size: 30px;
+  }
+  .lesson{
+    font-size: 25px;
+  }
+  .lessonNav{
+    font-size: 15px;
+  }
+  .icon{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+   .container{
+    margin-top: 220px;
+    
+   }
+  .walletconnect span{
+    width: 50%;
+  }
+ .chainSelect select{
+  width: 100px;
+ }
+  .mintInfoContainer {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .infoSide {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .imageSide {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .openBtn {
+    font-size: 30px;
+    top:10px;
+    left: 10px;
+  }
+}
+
+.loader {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
