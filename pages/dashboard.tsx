@@ -25,11 +25,11 @@ if (!window.ethereum){
 }
 
 const config = {
-    apiKey: '6EOnVuWc0fy9iaW3jw1HdoxXEOev3jQf',
+    apiKey:ALCHEMY_API,
     network: Network.ETH_MAINNET,
 }
 const configP = {
-    apiKey: '3V3KYNFpErp7Vas1Jx2moKebgIIC1ZO6',
+    apiKey: POLYGON_API,
     network: Network.MATIC_MAINNET,
 }
 const alchemyP = new Alchemy(configP);
@@ -39,12 +39,12 @@ const alchemy = new Alchemy(config);
 const Dashboard: NextPage = () => {  
     
     const person = useContext(UserContext)
-    const quicknode = "https://wiser-palpable-needle.matic.discover.quiknode.pro/99ae515f6212e1d4df1b6f1f90dc47841e13c2ec/";
+    const quicknode = QUICKNODE_URL;
     const address = useAddress();
     const [tokenBalances, setTokenBalances] = useState<TokenBalance[]>();
     const [isConnectedtoFB, setIsConnectedtoFB]= useState(false);
     const polygonprovider = new ethers.providers.JsonRpcProvider(quicknode);
-    const provider = new ethers.providers.AlchemyProvider('mainnet', '6EOnVuWc0fy9iaW3jw1HdoxXEOev3jQf');
+    const provider = new ethers.providers.AlchemyProvider('mainnet', ALCHEMY_API);
     const contractAddress = "0x882a1613FCf832f0c1BCE5C61C3869B28E84F8B5";
     const contract = new ethers.Contract(contractAddress, abi, polygonprovider);
     const [checkStatus, setCheckStatus] = useState(false);

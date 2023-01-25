@@ -47,7 +47,7 @@ function MyApp({Component, pageProps}:AppProps) {
   useEffect(()=>{
   window.fbAsyncInit = function() {
     window.FB.init({
-      appId      : '683091743530359',
+      appId      : FB_API,
       cookie     : true,
       xfbml      : true,
       version    : 'v15.0'
