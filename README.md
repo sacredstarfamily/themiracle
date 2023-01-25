@@ -1,9 +1,9 @@
 # themiracle
-themiracle
-git clone repo 
-use yarn add 
-sending env file on messenger
-cant get env to work so you have to replace ALCHEMY_API, POLYGON_API, QUICKNODE_URL with the values in the .env file in quotes
+themiracle \n
+git clone repo \n
+use yarn add \n
+sending env file on messenger \n
+cant get env to work so you have to replace ALCHEMY_API, POLYGON_API, QUICKNODE_URL with the values in the .env file in quotes\n
 FB API doesnt work on local host anyways.
 yarn dev runs on gtfol.me/3000
 CSS in styles folder and components folder globals.css, Theme.module.css, Theme2.module.scss, stats.module.css, topnav.module.css
